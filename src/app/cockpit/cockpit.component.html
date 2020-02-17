@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h4>Add new servers or blueprints</h4>
+    <hr />
+    <form>
+      <div class="form-group">
+        <label for="name">Server name</label>
+        <input type="text" id="name" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="content">Server content</label>
+        <input type="text" id="content" class="form-control" />
+      </div>
+      <div class="form-group">
+        <div class="btn-group float-right" role="group">
+          <button class="btn btn-primary" (click)="onAddServer()">
+            Add Server
+          </button>
+          <button class="btn btn-success" (click)="onAddBlueprint()">
+            Add Server Blueprint
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
