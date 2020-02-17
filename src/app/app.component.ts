@@ -8,19 +8,19 @@ import { Component } from "@angular/core";
 export class AppComponent {
   servers = [];
 
-  onAddServerClick(data: { name: string; content: string }) {
+  onAddServerClick(server: { name: string; content: string }) {
     this.servers.push({
       type: "server",
-      name: data.name,
-      content: data.content
+      name: server.name,
+      content: server.content
     });
   }
 
-  onAddBlueprintClick(data: { name: string; content: string }) {
+  onAddBlueprintClick(server: { name: string; content: string }) {
     this.servers.push({
       type: "blueprint",
-      name: data.name,
-      content: data.content
+      name: server.name,
+      content: server.content
     });
   }
 }
